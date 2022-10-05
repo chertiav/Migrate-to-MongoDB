@@ -1,0 +1,47 @@
+GET http://localhost:5000/api/shelves?page=1&result=5 HTTP/1.1
+Content-Type: application/json
+
+
+####
+
+GET http://localhost:5000/api/shelves/633c41b773f70c51d0c020f8 HTTP/1.1
+Content-Type: application/json
+
+
+####
+
+POST http://localhost:5000/api/shelves HTTP/1.1
+Content-Type: application/json
+
+{
+  "code": "Shelf#11",
+  "description": ""
+}
+
+
+####
+
+PUT http://localhost:5000/api/shelves HTTP/1.1
+Content-Type: application/json
+
+{
+	"id": "633dbdaf4ca5e6ab872ebc5a",
+  "code": "Shelf#11",
+  "description": "PUT"
+}
+
+
+####
+
+PATCH http://localhost:5000/api/shelves/633dbdaf4ca5e6ab872ebc5a HTTP/1.1
+Content-Type: application/json
+
+{
+  "description": "PATCH"
+}
+
+
+####
+
+DELETE http://localhost:5000/api/shelves/633dbdaf4ca5e6ab872ebc5a HTTP/1.1
+Content-Type: application/json

@@ -1,0 +1,54 @@
+GET http://localhost:5000/api/requests?page=1&result=5 HTTP/1.1
+Content-Type: application/json
+
+
+####
+
+GET http://localhost:5000/api/requests/633d994cc2887f596f110234 HTTP/1.1
+Content-Type: application/json
+
+
+####
+
+POST http://localhost:5000/api/requests HTTP/1.1
+Content-Type: application/json
+
+{
+	"code": "Request #0000-000000",
+	"date": "2022-10-05",
+	"customer_id": "633c499d29aaeb0965e65d21",
+	"books": ["book1","book2"],
+	"description": ""
+}
+
+
+####
+
+PUT http://localhost:5000/api/requests HTTP/1.1
+Content-Type: application/json
+
+{
+	"id": "633dbd884ca5e6ab872ebc53",
+	"code": "Request #0000-000000",
+	"date": "2022-10-05",
+	"customer_id": "633c499d29aaeb0965e65d21",
+	"books": ["book1","book2"],
+	"description": "PUT"
+}
+
+
+####
+
+PATCH http://localhost:5000/api/requests/633dbd884ca5e6ab872ebc53 HTTP/1.1
+Content-Type: application/json
+
+{
+  "description": "PATCH"
+}
+
+
+####
+
+DELETE http://localhost:5000/api/requests/633dbd884ca5e6ab872ebc53 HTTP/1.1
+Content-Type: application/json
+

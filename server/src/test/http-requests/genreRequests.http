@@ -1,0 +1,47 @@
+GET http://localhost:5000/api/genres?page=2&result=5 HTTP/1.1
+Content-Type: application/json
+
+
+####
+
+GET http://localhost:5000/api/genres/633c3e8dff9b8eb6213d064e HTTP/1.1
+Content-Type: application/json
+
+
+####
+
+POST http://localhost:5000/api/genres HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "New genre",
+  "description": ""
+}
+
+
+####
+
+PUT http://localhost:5000/api/genres HTTP/1.1
+Content-Type: application/json
+
+{
+	"id": "633dbdef4ca5e6ab872ebc5f",
+  "title": "New genre",
+  "description": "PUT"
+}
+
+
+####
+
+PATCH http://localhost:5000/api/genres/633dbdef4ca5e6ab872ebc5f HTTP/1.1
+Content-Type: application/json
+
+{
+  "description": "PATCH"
+}
+
+
+####
+
+DELETE http://localhost:5000/api/genres/633dbdef4ca5e6ab872ebc5f HTTP/1.1
+Content-Type: application/json

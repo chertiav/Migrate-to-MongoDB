@@ -1,0 +1,22 @@
+use('library');
+db.genres.insertMany([
+		{ title: 'Drama', description: '' },
+		{ title: 'Fantazy', description: '' },
+		{ title: 'Melodrama', description: '' },
+		{ title: 'Romantic', description: '' },
+		{ title: 'Action', description: '' },
+		{ title: 'Detective', description: '' },
+		{ title: 'Criminal', description: '' },
+		{ title: 'Western', description: '' },
+		{ title: 'Horror', description: '' },
+		{ title: 'Comedy', description: '' },
+		{ title: 'Classic', description: '' },
+		{ title: 'Science fiction', description: '' },
+		{ title: 'Historical', description: '' },
+		{ title: 'Biopic', description: '' },
+		{ title: 'Documentary', description: '' },
+		{ title: 'Education', description: '' },
+		{ title: 'Catalog', description: '' },
+		{ title: 'Technical', description: '' },
+		{ title: 'Guidebook', description: '' },
+	]);

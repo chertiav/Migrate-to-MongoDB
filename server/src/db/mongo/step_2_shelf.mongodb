@@ -1,0 +1,13 @@
+use('library');
+db.shelves.insertMany([
+	{ code: 'Shelf#1', description: '' },
+	{ code: 'Shelf#2', description: '' },
+	{ code: 'Shelf#3', description: '' },
+	{ code: 'Shelf#4', description: '' },
+	{ code: 'Shelf#5', description: '' },
+	{ code: 'Shelf#6', description: '' },
+	{ code: 'Shelf#7', description: '' },
+	{ code: 'Shelf#8', description: '' },
+	{ code: 'Shelf#9', description: '' },
+	{ code: 'Shelf#10', description: '' },
+]);
