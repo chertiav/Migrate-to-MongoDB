@@ -1,7 +1,7 @@
-const express = require('express');
+const { Router } = require('express');
 //==================================
 const authorControllers = require('../controllers/authorControllers');
-const authorRouter = new express.Router();
+const authorRouter = new Router();
 const { validate, pagination } = require('../middleware');
 
 authorRouter

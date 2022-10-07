@@ -1,7 +1,7 @@
-const express = require('express');
+const { Router } = require('express');
 //==================================
 const requestControllers = require('../controllers/requestControllers');
-const requestRouter = new express.Router();
+const requestRouter = new Router();
 const { validate, pagination } = require('../middleware');
 
 requestRouter

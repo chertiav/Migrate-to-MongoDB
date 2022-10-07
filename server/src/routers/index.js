@@ -1,4 +1,4 @@
-const express = require('express');
+const { Router } = require('express');
 //==================================
 const genreRouter = require('./genreRouters');
 const shelfRouter = require('./shelfRouters');
@@ -7,7 +7,7 @@ const authorRouter = require('./authorRouters');
 const requestRouter = require('./requestRouters');
 const bookRouter = require('./bookRouters');
 
-const router = new express.Router();
+const router = new Router();
 
 router.use('/genres', genreRouter);
 router.use('/shelves', shelfRouter);

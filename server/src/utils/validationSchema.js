@@ -5,6 +5,12 @@ const TITLE_NAME_SCHEMA = yup
 	.trim()
 	.matches(/^[A-Z,А-Я](\w+\s?)\w/);
 
+const EMAIL_SHEMA = yup
+	.string()
+	.email('Must be a valid email')
+	.trim()
+	.matches(/^\w+[\.\-]?\w+@[a-z]{3,8}\.[a-z]{2,5}$/);
+
 module.exports.paginationSchema = yup.object().shape({
 	limit: yup.number().min(1).max(5).required(),
 	skip: yup.number().required(),
@@ -23,7 +29,7 @@ module.exports.changeShelfValidationSchema = yup.object().shape({
 });
 module.exports.newCustomerValidationSchema = yup.object().shape({
 	name: yup.string().required().min(1),
-	email: yup.string().email().required().min(4),
+	email: EMAIL_SHEMA.required(),
 	birthday: yup.date(),
 	address: yup.object().shape({
 		country: yup.string().min(3),
@@ -42,7 +48,7 @@ module.exports.newCustomerValidationSchema = yup.object().shape({
 });
 module.exports.changeCustomerValidationSchema = yup.object().shape({
 	name: yup.string().min(1),
-	email: yup.string().email().min(4),
+	email: EMAIL_SHEMA,
 	birthday: yup.date(),
 	address: yup.object().shape({
 		country: yup.string().min(3),
@@ -61,7 +67,7 @@ module.exports.changeCustomerValidationSchema = yup.object().shape({
 });
 module.exports.newAuthorValidationSchema = yup.object().shape({
 	name: yup.string().required().min(1),
-	email: yup.string().email().required().min(4),
+	email: EMAIL_SHEMA.required(),
 	birthday: yup.date(),
 	death: yup.date(),
 	books: yup.array().of(yup.string()),
@@ -69,7 +75,7 @@ module.exports.newAuthorValidationSchema = yup.object().shape({
 });
 module.exports.changeAuthorValidationSchema = yup.object().shape({
 	name: yup.string().min(1),
-	email: yup.string().email().min(4),
+	email: EMAIL_SHEMA,
 	birthday: yup.date(),
 	death: yup.date(),
 	books: yup.array().of(yup.string()),

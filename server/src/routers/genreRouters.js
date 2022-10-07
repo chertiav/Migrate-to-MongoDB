@@ -1,7 +1,7 @@
-const express = require('express');
+const { Router } = require('express');
 //==================================
 const genreControllers = require('../controllers/genreControllers');
-const genreRouter = new express.Router();
+const genreRouter = new Router();
 const { validate, pagination } = require('../middleware');
 
 genreRouter

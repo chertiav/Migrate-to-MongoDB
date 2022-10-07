@@ -1,13 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-const mongoose = require('mongoose');
-const { Schema } = require('mongoose');
-const env = process.env.NODE_ENV || 'development';
 //=====================================
 const { errorHandlers } = require('./middleware');
-const config = require('./config/mongo-config')[env];
-const db = require('./db/models');
 const router = require('./routers');
 
 const app = express();

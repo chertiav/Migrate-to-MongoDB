@@ -1,171 +1,180 @@
 use('library');
 db.customers.insertMany([
-		{
-			name: 'Mick Box',
-			email: 'm-b.gmail.com',
-			birthday: '1947-06-09',
-			address: {
-				country: 'Ukraine',
-				city: 'Dnipro',
-				street: 'Yavornitskogo',
-				building: '18b',
-				app: '120',
-				zipcode: 49130,
-			},
-			phone: {
-				home: '+380501111111',
-				office: '+380441111111',
-			},
-			description: '',
-			password: 'password1',
+	{
+		name: 'Mick Box',
+		email: 'm-b.gmail.com',
+		birthday: '1947-06-09',
+		address: {
+			country: 'Ukraine',
+			city: 'Dnipro',
+			street: 'Yavornitskogo',
+			building: '18b',
+			app: '120',
+			zipcode: 49130,
 		},
-		{
-			name: 'Freddie Mercury',
-			email: 'f-m.gmail.com',
-			birthday: '1946-09-05',
-			address: {
-				country: 'Ukraine',
-				city: 'Zaporizhzhia',
-				street: 'Svobody',
-				building: '20 b',
-				app: '120',
-				zipcode: 69061,
-			},
-			phone: {
-				home: '+380672222222',
-			},
-			description: '',
-			password: 'password2',
+		phone: {
+			home: '+380501111111',
+			office: '+380441111111',
 		},
-		{
-			name: 'David Bowie',
-			email: 'd-b.gmail.com',
-			birthday: '1947-01-08',
-			address: {
-				country: 'Ukraine',
-				city: 'Odessa',
-				street: 'Deribasovskaya',
-				building: '20 b',
-				app: '120',
-				zipcode: 65125,
-			},
-			phone: {
-				home: '+380502222222',
-				office: '+380441111111',
-			},
-			description: '',
-			password: 'password3',
+		description: '',
+		password: 'password1',
+		requests: []
+	},
+	{
+		name: 'Freddie Mercury',
+		email: 'f-m.gmail.com',
+		birthday: '1946-09-05',
+		address: {
+			country: 'Ukraine',
+			city: 'Zaporizhzhia',
+			street: 'Svobody',
+			building: '20 b',
+			app: '120',
+			zipcode: 69061,
 		},
-		{
-			name: 'Bill Gates',
-			email: 'b-g.gmail.com',
-			birthday: '1955-10-28',
-			address: {
-				country: 'USA',
-				city: 'New York',
-				street: 'Wholt Street',
-				building: '722',
-				app: '250',
-				zipcode: 10020,
-			},
-			phone: {
-				office: '+380441111111',
-			},
-			description: '',
-			password: 'password4',
+		phone: {
+			home: '+380672222222',
 		},
-		{
-			name: 'Steven Jobs',
-			email: 's-b.gmail.com',
-			birthday: '1955-02-24',
-			address: {
-				country: 'USA',
-				city: 'Manchester',
-				street: 'Robin Hood',
-				building: '320d',
-				app: '32',
-				zipcode: 03105,
-			},
-			phone: {
-				home: '+380502222222',
-				office: '+380441111111',
-			},
-			description: '',
-			password: 'password5',
+		description: '',
+		password: 'password2',
+		requests: []
+	},
+	{
+		name: 'David Bowie',
+		email: 'd-b.gmail.com',
+		birthday: '1947-01-08',
+		address: {
+			country: 'Ukraine',
+			city: 'Odessa',
+			street: 'Deribasovskaya',
+			building: '20 b',
+			app: '120',
+			zipcode: 65125,
 		},
-		{
-			name: 'Mike Tyson',
-			email: 'm-t.gmail.com',
-			birthday: '1966-06-30',
-			address: {
-				country: 'Great Britain',
-				city: 'London',
-				street: 'Backer Street',
-				building: '32',
-				app: '3',
-				zipcode: 5208,
-			},
-			phone: {
-				home: '+380503333333',
-				office: '+380443333333',
-			},
-			description: '',
-			password: 'password6',
+		phone: {
+			home: '+380502222222',
+			office: '+380441111111',
 		},
-		{
-			name: 'Rocco Marchegiano',
-			email: 'r-m.gmail.com',
-			birthday: '1923-09-01',
-			address: {
-				country: 'USA',
-				city: 'Washington',
-				street: 'Wholt Street',
-				building: '20 b',
-				app: '120',
-				zipcode: 98002,
-			},
-			phone: {
-				home: '+380504444444',
-				office: '+380444444444',
-			},
-			description: '',
-			password: 'password7',
+		description: '',
+		password: 'password3',
+		requests: []
+	},
+	{
+		name: 'Bill Gates',
+		email: 'b-g.gmail.com',
+		birthday: '1955-10-28',
+		address: {
+			country: 'USA',
+			city: 'New York',
+			street: 'Wholt Street',
+			building: '722',
+			app: '250',
+			zipcode: 10020,
 		},
-		{
-			name: 'Vito Carleone',
-			email: 'v-c.gmail.com',
-			birthday: '1891-12-07',
-			address: {
-				country: 'USA',
-				city: 'Chicago',
-				street: 'Rusvelt Teodor',
-				building: '20 b',
-				app: '120',
-				zipcode: 60176,
-			},
-			phone: {
-				home: '+380505555555',
-				office: '+380445555555',
-			},
-			description: '',
-			password: 'password8',
+		phone: {
+			office: '+380441111111',
 		},
-		{
-			name: 'David Byron',
-			email: 'g-b.gmail.com',
-			birthday: '1947-01-29',
-			address: {
-				country: 'Great Britain',
-				city: 'London',
-				street: 'Trafalgar squear',
-				building: '2 с',
-				zipcode: 'E1 6AN',
-			},
-			phone: {
-				home: '+380507777777',
-				office: '+380447777777',
-			},
-			description: '',
-			password: 'password9',
+		description: '',
+		password: 'password4',
+		requests: []
+	},
+	{
+		name: 'Steven Jobs',
+		email: 's-b.gmail.com',
+		birthday: '1955-02-24',
+		address: {
+			country: 'USA',
+			city: 'Manchester',
+			street: 'Robin Hood',
+			building: '320d',
+			app: '32',
+			zipcode: 03105,
 		},
-	]);
+		phone: {
+			home: '+380502222222',
+			office: '+380441111111',
+		},
+		description: '',
+		password: 'password5',
+		requests: []
+	},
+	{
+		name: 'Mike Tyson',
+		email: 'm-t.gmail.com',
+		birthday: '1966-06-30',
+		address: {
+			country: 'Great Britain',
+			city: 'London',
+			street: 'Backer Street',
+			building: '32',
+			app: '3',
+			zipcode: 5208,
+		},
+		phone: {
+			home: '+380503333333',
+			office: '+380443333333',
+		},
+		description: '',
+		password: 'password6',
+		requests: []
+	},
+	{
+		name: 'Rocco Marchegiano',
+		email: 'r-m.gmail.com',
+		birthday: '1923-09-01',
+		address: {
+			country: 'USA',
+			city: 'Washington',
+			street: 'Wholt Street',
+			building: '20 b',
+			app: '120',
+			zipcode: 98002,
+		},
+		phone: {
+			home: '+380504444444',
+			office: '+380444444444',
+		},
+		description: '',
+		password: 'password7',
+		requests: []
+	},
+	{
+		name: 'Vito Carleone',
+		email: 'v-c.gmail.com',
+		birthday: '1891-12-07',
+		address: {
+			country: 'USA',
+			city: 'Chicago',
+			street: 'Rusvelt Teodor',
+			building: '20 b',
+			app: '120',
+			zipcode: 60176,
+		},
+		phone: {
+			home: '+380505555555',
+			office: '+380445555555',
+		},
+		description: '',
+		password: 'password8',
+		requests: []
+	},
+	{
+		name: 'David Byron',
+		email: 'g-b.gmail.com',
+		birthday: '1947-01-29',
+		address: {
+			country: 'Great Britain',
+			city: 'London',
+			street: 'Trafalgar squear',
+			building: '2 с',
+			zipcode: 'E1 6AN',
+		},
+		phone: {
+			home: '+380507777777',
+			office: '+380447777777',
+		},
+		description: '',
+		password: 'password9',
+		requests: []
+	},
+]);

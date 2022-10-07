@@ -1,7 +1,7 @@
-const express = require('express');
+const { Router } = require('express');
 //==================================
 const shelfControllers = require('../controllers/shelfControllers');
-const shelfRouter = new express.Router();
+const shelfRouter = new Router();
 const { validate, pagination } = require('../middleware');
 
 shelfRouter

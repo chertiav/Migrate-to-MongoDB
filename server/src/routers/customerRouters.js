@@ -12,7 +12,11 @@ customerRouter
 		hashPassword.hashPassword,
 		customerControllers.createCustomer,
 	)
-	.put(validate.validateNewCustomer, customerControllers.updateCustomer);
+	.put(
+		validate.validateNewCustomer,
+		hashPassword.hashPassword,
+		customerControllers.updateCustomer,
+	);
 
 customerRouter
 	.route('/:id')
